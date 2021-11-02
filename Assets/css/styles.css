@@ -6,8 +6,10 @@
 
 body {
     background-color: #c7ac73;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Header */
 header {
     color: silver;
     background-color: #8b1404;
@@ -36,4 +38,72 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+}
+header h1 {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    color: silver;
+    background-color: #8b1404;
+    display: flex;
+    flex-wrap: wrap;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    justify-content: space-between;
+    padding: 15px 25px;
+}
+Footer h2 {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.5;
+}
+footer address {
+    font-size: 30px;
+}
+footer address a {
+    color: silver;
+}
+
+/* About Me */
+#about-me {
+    border: 3px solid #8b1404;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 5px;
+    background-color: silver;
+}
+#about-me h2 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+}
+#about-me p {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+/* Projects */
+#my-projects {
+    border: 3px solid #8b1404;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 5px;
+    background-color: silver;
+}
+#my-projects h2 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+}
+.projects li a {
+    border: 3px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
