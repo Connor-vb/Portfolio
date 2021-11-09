@@ -22,8 +22,8 @@ THEN I am presented with a responsive layout that adapts to my viewport
 *HTML
 *CSS
 
-## Started 
-10-07-2021
+## When 
+11-08-2021
 
 ## Website
 https://connor-vb.github.io/Portfolio/
