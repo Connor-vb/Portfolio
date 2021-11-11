@@ -79,6 +79,7 @@ footer address a {
     font-style: italic;
     font-weight: bold;
     font-size: 40px;
+    border-bottom: 2px solid black;
 }
 #about-me p {
     font-size: 20px;
@@ -97,6 +98,10 @@ footer address a {
     font-style: italic;
     font-weight: bold;
     font-size: 40px;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .projects li a {
     border: 3px;
@@ -108,3 +113,49 @@ footer address a {
     margin-top: 10px;
 }
 /* Media Queries */
+@media screen and (max-width: 980px) {
+    #my-projects, #about-me {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+        header nav ul li a {
+            font-size: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+}
+@media screen and (max-width: 575px) {
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            width: 100%;
+            border-bottom: black 2px solid;
+        }
+        header nav ul li a{
+            font-size: 17px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header nav {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        footer h2 {
+            font-size: 20px;
+        }
+        footer address {
+            font-size: 17px;
+        }
+        #my-projects h2, #about-me h2 {
+            font-size: 25px
+        }
+}
