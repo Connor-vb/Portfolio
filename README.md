@@ -27,7 +27,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 11-08-2021
 
 ## Screenshot
-
+![Portfolio-screenshot](https://user-images.githubusercontent.com/90352499/141660346-c92fad7c-64d4-4281-8fc6-6c4c35837b3b.jpeg)
 
 ## Website
 https://connor-vb.github.io/Portfolio/
