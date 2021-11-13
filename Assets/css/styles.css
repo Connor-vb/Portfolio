@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #8b1404;
+    --secondary-color: #c7ac73;
+    --tertiary-color: silver;
+}
 * {
     margin: 0;
     padding: 0;
@@ -5,14 +10,14 @@
 }
 
 body {
-    background-color: #c7ac73;
+    background-color: var(--secondary-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Header */
 header {
-    color: silver;
-    background-color: #8b1404;
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -22,7 +27,7 @@ header {
 header a {
     text-decoration: none;
     margin: 0;
-    color: silver;
+    color: var(--tertiary-color);
 }
 header nav {
     margin: 7px 0;
@@ -48,8 +53,8 @@ header h1 {
 
 /* Footer */
 footer {
-    color: silver;
-    background-color: #8b1404;
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -68,16 +73,16 @@ footer address {
     font-size: 30px;
 }
 footer address a {
-    color: silver;
+    color: var(--tertiary-color);
 }
 
 /* About Me */
 #about-me {
-    border: 3px solid #8b1404;
+    border: 3px solid var(--primary-color);
     border-radius: 15px;
     padding: 20px;
     margin: 20px 5px;
-    background-color: silver;
+    background-color: var(--tertiary-color);
 }
 #about-me h2 {
     font-style: italic;
@@ -92,11 +97,11 @@ footer address a {
 
 /* Projects */
 #my-projects {
-    border: 3px solid #8b1404;
+    border: 3px solid var(--primary-color);
     border-radius: 15px;
     padding: 20px;
     margin: 20px 5px;
-    background-color: silver;
+    background-color: var(--tertiary-color);
     
 }
 #my-projects h2 {
@@ -116,13 +121,13 @@ footer address a {
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 10px;
+    text-align: center;
 }
 #my-projects ul li img {
     width: 100%;
     border: 2px solid black;
     margin-top: 5px;
     flex-direction: column;
-
 }
 #my-projects, #about-me {
     margin-left: 30px;
@@ -145,6 +150,11 @@ ul.projects {
             justify-content: space-between;
             align-items: center;
         }
+        header h1 {
+            border-bottom: var(--secondary-color) 2px solid;
+            border-right: var(--secondary-color) 2px solid;
+            padding-right: 7px;
+        }
 }
 @media screen and (max-width: 575px) {
         header h1 {
@@ -153,8 +163,9 @@ ul.projects {
             display: flex;
             justify-content: left;
             align-items: center;
-            width: 100%;
-            border-bottom: black 2px solid;
+            border-bottom: var(--secondary-color) 2px solid;
+            border-right: var(--secondary-color) 2px solid;
+            padding-right: 7px;
         }
         header nav ul li a{
             font-size: 17px;
